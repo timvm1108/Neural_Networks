@@ -16,7 +16,7 @@ def retrieve_data():
     mnist = tf.keras.datasets.mnist
     (mnist_train_x, mnist_train_y), (mnist_test_x, mnist_test_y) = mnist.load_data()
 
-    # Each pixel will be a value from 0 to 255, this will server to normalize the pixel values to a range 0 to 1
+    # Each pixel will be a value from 0 to 255, this will serve to normalize the pixel values to a range 0 to 1
     mnist_train_x = mnist_train_x / 255.0
     mnist_test_x = mnist_test_x / 255.0
 
